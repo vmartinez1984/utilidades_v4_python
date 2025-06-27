@@ -12,4 +12,23 @@ Proyecto funcional creado original en .net
 - Productos
 
 ##  Códigos Postales
-Información desde SEPOMEX, buscar codigo postal, obtner aleatorio
+Información desde SEPOMEX, buscar codigo postal, obtener aleatorio
+
+## Run app
+
+```
+uvicorn main:app --reload
+```
+
+## todo
+[ ] Subir el archivo csv y guardar en mongoDb
+
+[ ] Banco -> clabes, tarjetas de debito
+
+[ ] Direcciones
+
+[ ] Identificadores
+
+[ ] Personas fake
+
+[ ] Productos
