@@ -13,3 +13,7 @@ Proyecto funcional creado original en .net
 
 ##  Códigos Postales
 Información desde SEPOMEX, buscar codigo postal, obtner aleatorio
+
+```
+pip install -r .\requirements.txt
+```
