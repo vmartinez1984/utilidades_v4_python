@@ -1,6 +1,7 @@
 from typing import List
 from fastapi import APIRouter, Path
 from fastapi.responses import JSONResponse
+from helpers import my_headers
 from repositories.codigo_postal_repository import (
     get_random_codigo_postal,
     get_codigo_postal,
@@ -17,12 +18,6 @@ from dtos.CodigoPostalDto import AlcaldiaDto, CodigoPostalDto, EstadoDto
 from helpers.mapper import serial_codigo_postal, serial_codigos_postales
 
 codigo_postal_router = APIRouter()
-
-
-def get_header(inventory):
-    headers = {"autor": "victor martinez", "total": str(len(inventory))}
-
-    return headers
 
 
 @codigo_postal_router.get(
@@ -66,7 +61,7 @@ async def get_by_asentamiento_in_estado(estado: str, asentamiento: str):
     inventory = serial_codigos_postales(inventory)
     # print(inventory)
     return JSONResponse(
-        status_code=200, content=inventory, headers=get_header(inventory)
+        status_code=200, content=inventory, headers=my_headers(inventory)
     )
 
 
@@ -95,7 +90,7 @@ async def get_codigos_postales_by_asentamiento_in_alcaldia(
     inventory = serial_codigos_postales(inventory)
 
     return JSONResponse(
-        content=inventory, status_code=200, headers=get_header(inventory)
+        content=inventory, status_code=200, headers=my_headers(inventory)
     )
 
 

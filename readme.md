@@ -21,14 +21,27 @@ uvicorn main:app --reload
 ```
 
 ## todo
-[ ] Subir el archivo csv y guardar en mongoDb
+- [ ] Subir el archivo csv y guardar en mongoDb
+- [x] Banco -> clabes
+- [x] Banco -> Tarjetas, se genera con 400000
+- [ ] Banco -> Ingresar catalogo de bines
+- [ ] Direcciones
+- [ ] Identificadores
+- [ ] Personas fake
+- [ ] Productos
 
-[ ] Banco -> clabes, tarjetas de debito
 
-[ ] Direcciones
+## Estudiar
+complejidad algoritmica
 
-[ ] Identificadores
+algoritmia
 
-[ ] Personas fake
+hacker ranck
 
-[ ] Productos
+problem solving para principantes
+
+docker, aws, cloud, gsp
+
+Invertirle mas en C#
+
+Sql
