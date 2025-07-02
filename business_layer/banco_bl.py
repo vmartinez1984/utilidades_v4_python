@@ -1,7 +1,7 @@
 import random
 from typing import List
 from dtos.Banco import NumeroDeBancoDto, PlazaDto, SolicitudDeClabeDto
-from repositories.plaza_repository import get_all, get_random_plaza
+from repositories.plaza_repository import get_all
 from repositories.codigo_de_banco_repository import get_all as get_all_bancos
 
 
